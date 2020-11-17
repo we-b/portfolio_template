@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans JP",-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+}
+
+body {
+  background-color: #F2F3F7;
+}
+
+a, p {
+  text-decoration: none;
+  color: #424242;
+}
+
+h2 {
+  padding: 20px 0 35px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 300px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+#about {
+  display: flex;
+  justify-content: space-between;
+}
+
+#works {
+  background-color: #4F5E7F;
+  padding-bottom: 60px;
+}
+
+#works h2, p {
+  color: #F2F3F7;
+}
+
+.apps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.app {
+
+}
+
+footer {
+  background-color: #272F3F;
+  padding-bottom: 60px;
+}
+
+footer h2 {
+  color: #D5C7C7;
+}
+
+.sites {
+  display: flex;
+  justify-content: center;
+}
+
+.sites a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  height: 135px;
+  margin: 0 40px;
+  background-color: #FFF;
+  border-radius: 50%;
+  color: #111;
+  text-align: center;
+}
+
+.sites a>img,
+.sites a>p {
+  width: 100px;
+}
