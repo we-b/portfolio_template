@@ -38,6 +38,10 @@ img {
   margin: 0 auto;
 }
 
+header {
+  padding: 15px 0;
+}
+
 header > :first-child {
   display: flex;
   justify-content: space-between;
@@ -48,7 +52,9 @@ header nav ul {
 }
 
 header nav ul li {
-  margin-right: 20px;
+  margin-right: 40px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 #aboutMe {
