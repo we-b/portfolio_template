@@ -10,7 +10,7 @@ body {
   background-color: #F2F3F7;
 }
 
-a, p, dt, dd, li {
+h1, h2, a, p, dt, dd, li {
   text-decoration: none;
   color: #424242;
 }
@@ -19,7 +19,7 @@ h1 {
   font-size: 25px;
 }
 
-h2 {
+#works h2, #contact h2 {
   padding: 30px 0 55px;
   margin: 0 auto;
   text-align: center;
@@ -30,7 +30,7 @@ ul {
 }
 
 img {
-  width: 300px;
+  object-fit: cover;
 }
 
 .wrapper {
@@ -52,11 +52,12 @@ header nav ul {
 }
 
 header nav ul li {
-  margin-right: 40px;
+  margin-left: 40px;
   font-size: 25px;
   font-weight: bold;
 }
 
+/* index */
 #aboutMe {
   padding: 40px 0 60px;
 }
@@ -64,6 +65,12 @@ header nav ul li {
 #aboutMe > :first-child {
   display: flex;
   justify-content: space-between;
+}
+
+#aboutMe .profile img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
 
 #aboutMe .profile ul {
@@ -96,7 +103,7 @@ header nav ul li {
   padding-bottom: 60px;
 }
 
-#works h2, p {
+#works h2, #works p {
   color: #F2F3F7;
 }
 
@@ -104,17 +111,17 @@ header nav ul li {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 90%;
   margin: 0 auto;
 }
 
 .app {
   margin-bottom: 30px;
-  width: 45%;
+  width: 40%;
 }
 
 .app img {
   width: 100%;
+  height: clamp(180px, 100vw / 2 - 400px, 400px);
 }
 
 footer {
@@ -148,3 +155,92 @@ footer h2 {
 .sites a>p {
   width: 100px;
 }
+
+
+/* original & furima */
+.discriptions {
+  padding: 30px 0;
+}
+
+.discriptions .flexBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 36px;
+}
+
+.discriptions h2 {
+  margin-top: 0;
+}
+
+.discriptions a {
+  text-decoration: underline;
+}
+
+.discriptions dl {
+  width: 460px;
+  border: 1px solid #CCC;
+  border-top: none;
+  background-color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.discriptions dt {
+  width: 30%;
+  padding: 10px;
+  border-top: 1px solid #CCC;
+}
+.discriptions dd {
+  width: 70%;
+  margin-left: 30%;
+  padding: 10px;
+  border-left: 1px solid #CCC;
+  border-top: 1px solid #CCC;
+  background: #FFF;
+  margin: 0;
+}
+
+.discriptions .discTitle {
+  width: 100%;
+  background-color: #D7DBE6;
+}
+
+.flexBox .rightBox {
+  padding-left: 30px;
+}
+
+.flexBox .rightBox img {
+  width: 100%;
+  height: 580px;
+  margin-bottom: 30px;
+}
+
+.githubIcon::before {
+  content: "\f09b";
+  font-family: "Font Awesome 5 Brands";
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.impressions {
+  border-top: #c0c0c0 solid 1px;
+  background-color: #DDDFEA;
+  padding: 30px 0;
+}
+
+.impressions img {
+  width: 50%;
+  height: clamp(180px, 100vw / 2 - 400px, 400px);
+}
+
+.discriptions > :first-child > p, .impressions p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+
+
+
+/* furima */
